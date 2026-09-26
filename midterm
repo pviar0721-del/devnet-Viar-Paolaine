@@ -34,6 +34,7 @@ def view_pets(pet_list):
     
 
 def count_available_adopted(pet_list):
+
     # loop through, count Available vs Adopted, return both
     pass
 
@@ -52,6 +53,15 @@ def find_pet(pet_list):
 
 # BONUS (optional)
 def remove_pet(pet_list):
+    if len(pet_list) == 0:
+        print("Not Found")
+        return
+
+    r_name = input("Enter a name to remove: ")
+    for pets in pet_list:
+        if r_name in pets:
+            pet_list.remove(pets)
+            print(f"Successfully remove the {pets}")
     # your code here
     pass
 
