@@ -19,21 +19,36 @@ def add_pet(pet_list):
 
     pet_info = name + " - " + a_type + " - " + status
     pet_list.append(pet_info)
-    print("Pet is added!")
+    print(f"Pet {pet_info} is added!")
     # ask for name, animal type, status — build the string, add to the list
     
 
 def view_pets(pet_list):
+    if len(pet_list) == 0:
+        print("No pets added yet!")
+    else:
+        print("View All Pets")
+        for pets in pet_list:
+            print(pets)
     # loop through and print every pet — handle empty list
-    pass
+    
 
 def count_available_adopted(pet_list):
     # loop through, count Available vs Adopted, return both
     pass
 
 def find_pet(pet_list):
+    if len(pet_list) == 0:
+        print("Not Found")
+        return
+
+    s_name = input("Enter a name: ")
+    for pets in pet_list:
+        if s_name in pets:
+            print(f"Found the {pets}")
+        else:
+            print("Not in the list!")
     # ask for a name, search the list, print result or "not found"
-    pass
 
 # BONUS (optional)
 def remove_pet(pet_list):
