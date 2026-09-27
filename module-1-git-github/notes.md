@@ -42,7 +42,7 @@ git push
 
 ## A mistake I made (or one I want to avoid)
 
-[What tripped you up? A confusing error message, committing to the wrong branch, a merge conflict — explain it so a classmate reading this avoids the same mistake.]
+I want to avoid committing in a wrong branch because it can pollute working branches with untested code or break production if pushed unintentionally. It also creates a messy git history and forces you to use complex cleanup commands to relocate your changes.
 
 ---
 
