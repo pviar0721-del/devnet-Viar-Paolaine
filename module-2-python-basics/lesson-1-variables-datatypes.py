@@ -33,7 +33,17 @@ Write at least one working example below that you
 came up with yourself — not copied from class.
 """
 
-# --- your code example goes here ---
+student_name = "Paolaine"   
+student_lastname = “Viar”   
+student_age = 18          
+gpa = 3.75                 
+status = True        
+
+print(f"Student Name: {student_name} {student_lastname}")
+print(f"Age: {student_age}")
+print(f"GPA: {gpa}")
+print(f"Currently Enrolled: {is_enrolled}")
+
 
 
 """
@@ -42,6 +52,8 @@ A MISTAKE I MADE (or one I want to avoid)
 ============================================
 [what's something confusing or easy to get wrong
 about this topic?]
+I want to avoid forgetting to put quotes around text strings or mixing up data types in calculations, 
+like trying to add a string ("10") to an integer (5) without converting it first, which causes a TypeError.
 
 
 ============================================
