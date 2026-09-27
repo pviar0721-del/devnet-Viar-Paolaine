@@ -34,7 +34,24 @@ Write at least one working example below that you
 came up with yourself — not copied from class.
 """
 
-# --- your code example goes here ---
+moms_list = ["Milk", "Eggs", "Bread", "Butter"]
+cart = ["Milk", "Bread"] 
+
+print("--- Cashier checks your cart ---")
+
+for item in cart:
+    print(f"Cashier scanned: {item}")
+
+print("\nOh no! You missed some items from Mom's list!")
+
+while len(cart) < len(moms_list):
+    for item in moms_list:
+        if item not in cart:
+            print(f"Going back to the aisle to get missed item: {item}...")
+            cart.append(item)
+            print(f"Returned to cashier and scanned: {item}")
+
+print("\nAll items from Mom's list are checked out!")
 
 
 """
@@ -43,6 +60,10 @@ A MISTAKE I MADE (or one I want to avoid)
 ============================================
 [what's something confusing or easy to get wrong
 about this topic?]
+
+1. Forgetting that list indexing starts at 0, not 1
+2. Creating an infinite loop in a 'while' loop by forgetting to update the condition (like forgetting to add the missing items to the cart, causing you to run around the store forever!).
+
 
 
 ============================================
