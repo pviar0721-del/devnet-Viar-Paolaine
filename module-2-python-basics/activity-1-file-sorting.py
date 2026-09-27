@@ -15,10 +15,10 @@ extension.
 ============================================
 KEY VOCABULARY
 ============================================
-- os module:
-- shutil module:
-- file path:
-- directory:
+- os module: A built-in Python module used to interact with the operating system, navigate directories, and check file existence
+- shutil module: A Python utility module used for high-level file operations, such as copying and moving files between directories
+- file path: The specific address or location of a file or folder in the computer's directory structure
+- directory: A folder on a computer used to store and organize files and subdirectories
 (add more as needed)
 
 
@@ -61,9 +61,10 @@ else:
 ============================================
 A MISTAKE I MADE (or one I want to avoid)
 ============================================
-[what tripped you up while building this? e.g. a path that didn't
-exist, a file that got overwritten, something that didn't work the
-way you expected at first]
+A mistake I made initially was that the files didn't sort well because I didn't include a proper loop 
+to iterate through all items in the directory. Without a loop (for file in os.listdir(...)), the script 
+only attempted to process a single item or check if the folder existed, leaving all the other files unsorted 
+in the main folder.
 
 
 ============================================
