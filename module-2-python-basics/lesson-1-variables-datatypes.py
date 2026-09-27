@@ -7,18 +7,22 @@ Date: [date]
 WHAT IS THIS TOPIC? (explain it like you're
 teaching a friend who's never coded before)
 ============================================
-[write your own explanation here]
+Think of a variable as a labeled box where you store something so you can find and use it later. 
+The data type tells the computer what kind of item is inside that box like whether it's text, a whole 
+number, a decimal number, or a simple true or false answer.
+
 
 
 ============================================
 KEY VOCABULARY
 ============================================
-- variable:
-- data type:
-- int:
-- float:
-- string:
-- boolean:
+- variable: Container that holds a value.
+- data type: It tells what type of value stored in a variable.
+- int: Whole numbers 
+- float: Numbers with a decimal point 
+- string: Text enclosed in a quote 
+- boolean: True or False value
+
 (add more as needed)
 
 
