@@ -30,15 +30,22 @@ Write at least one working example below that you
 came up with yourself — not copied from class.
 """
 
-# --- your code example goes here ---
+my_allowance = 200
+
+if my_allowance >= 150:
+    print("Plan A: Have a fancy date.")
+elif budget >= 50:
+    print("Plan B: Have a tusok-tusok date.")
+else:
+    print("Plan C: Sleep.")
 
 
 """
 ============================================
 A MISTAKE I MADE (or one I want to avoid)
 ============================================
-[what's something confusing or easy to get wrong
-about this topic?]
+Using a single equals sign (=) instead of a double equals sign (==) inside an 'if' statement. 
+A single '=' assigns a value to a variable, while '==' compares two values to see if they are equal.
 
 
 ============================================
