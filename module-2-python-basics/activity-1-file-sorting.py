@@ -1,14 +1,15 @@
 """
 Module 2 — Activity: File Sorting with os and shutil
-Student: [your name]
-Date: [date]
+Student: Viar, Paolaine Esther M.
+Date: 09/27/2026
 
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
 ============================================
-[Paste your working script below first, then come back and explain
-it here: what does your script do, and what rule did you use to
-sort the files? e.g. by extension, by name, by date, etc.]
+I built an automated file organizer script in Python. It asks the user for a target folder path, 
+scans all files inside that folder, creates subfolders for different file types (images, documents, 
+videos, and others), and automatically moves each file into its matching subfolder based on its file 
+extension.
 
 
 ============================================
@@ -30,7 +31,30 @@ Paste the code you already wrote for this activity below.
 import os
 import shutil
 
-# --- paste your existing code here ---
+users = input("What is your folder path? ")
+
+if os.path.exists(users):
+    print("Proceed to Next Step")
+
+    file = os.listdir(users)
+    image = 0
+    documents = 0 
+    videos = 0
+    others = 0
+
+    print(file)
+
+    for file in [image, documents, videos, others]:
+        if not os.path.exists(file):
+            os.mkdir(file)
+
+    for items in file:
+        users = os.path.exists(users)
+
+        print (file)
+    
+else:
+    print("Error")
 
 
 """
