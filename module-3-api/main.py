@@ -16,6 +16,13 @@ if response.status_code == 200:
     print("WHO'S THAT POKEMON!")
     print(f"Height: {height}")
     print(f"Weight: {weight}")
+
+    for attempt in range(3,0,-1):
+        print(f"Remaining attempt is {attempt}")
+        guess = input(f"Enter your answer:")
+
+    else:
+        print("Game Over! No attempt left!")
 else:
     print("Could not find the Pokemon Information!")
 
